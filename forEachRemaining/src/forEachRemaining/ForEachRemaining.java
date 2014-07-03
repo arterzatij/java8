@@ -29,7 +29,11 @@ public class ForEachRemaining {
 		//Obtenemos el iterador de la lista
 		Iterator<String> iterator = array.iterator();
 		
+		//Se invoca el metodo pasandole la implementacion de la interface Consumer
 		iterator.forEachRemaining(new Consumer<String>() {
+			/*Este es el metodo que habra que implementar 
+			  con la logica o el procesamiento deseado 
+			  para cada objeto de tu lista*/
 			@Override
       			public void accept(String t) {
 				System.out.println(t);
