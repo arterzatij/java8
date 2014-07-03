@@ -31,10 +31,9 @@ public class ForEachRemaining {
 		
 		iterator.forEachRemaining(new Consumer<String>() {
 			@Override
-      public void accept(String t) {
+      			public void accept(String t) {
 				System.out.println(t);
-	      
-      }
+			}
 		});
 	}
 }
